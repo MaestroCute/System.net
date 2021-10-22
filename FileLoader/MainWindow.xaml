@@ -1,0 +1,34 @@
+﻿<Window x:Class="FileLoader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FileLoader"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="600">
+    <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical" Margin="20px 0">
+        <TextBox 
+            x:Name="link"
+            FontSize="16px"
+            Margin="0 8px"
+            Padding="8px"
+            Text="http://www.professorweb.ru"
+        />
+        <TextBlock 
+            x:Name="content"
+            FontSize="16px"
+            Margin="0 8px"
+            Padding="8px"
+            Text="file content"
+            Height="300px"
+            Width="500px"
+            TextWrapping="Wrap"
+            />
+        <Button
+            Click="LoadFile_OnClick"
+            FontSize="16px"
+            Margin="0 8px"
+            Padding="8px"
+            >load</Button>
+    </WrapPanel>
+</Window>
